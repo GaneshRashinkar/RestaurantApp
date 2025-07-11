@@ -6,7 +6,7 @@ import com.google.gson.internal.NumberLimits
 
 class RestaurantsRepository {
     suspend fun getRestaurantsWithDefaultLocation(pageNumber:Int)= RetrofitInstance.api.getRestaurantsWithDefaultLocation(
-        location = "NYC",
+        location = "New York City",
         sort_by = "best_match",
         limit = AppConstants.PAGE_LIMIT,
         offset = pageNumber
